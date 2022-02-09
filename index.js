@@ -11,19 +11,19 @@ function check() {
     } else {
         console.log("birthday", birthday);
     }
-    var pru = String(identification) + String(birthday);
-    var array = [];
-    array = pru.split("");
-    console.log(array)
-    var number1 = array[0];
-    var number2 = array[1];
-    var number3 = array[2];
-    var number4 = array[4];
-    var number5 = array[5];
-    var number6 = array[6];
-    var number7 = array[7];
-    var number8 = array[8];
-    var number9 = array[9];
+    var input = String(identification) + String(birthday);
+    var inputSplitted = [];
+    inputSplitted = input.split("");
+    console.log(inputSplitted)
+    var number1 = inputSplitted[0];
+    var number2 = inputSplitted[1];
+    var number3 = inputSplitted[2];
+    var number4 = inputSplitted[4];
+    var number5 = inputSplitted[5];
+    var number6 = inputSplitted[6];
+    var number7 = inputSplitted[7];
+    var number8 = inputSplitted[8];
+    var number9 = inputSplitted[9];
     sumNumber1 = number1 * 3;
     sumNumber2 = number2 * 7;
     sumNumber3 = number3 * 9;
@@ -38,9 +38,9 @@ function check() {
 
     result = summe % 11;
 
-    console.log(array[3])
+    console.log(inputSplitted[3])
     console.log("result", result)
-    if (String(result) == String(array[3])) {
+    if (String(result) == String(inputSplitted[3])) {
         document.getElementById('trueOrFalse').innerHTML = ('Die SvN ist gültig!');
     } else {
         document.getElementById('trueOrFalse').innerHTML = ('Die SvN ist ungültig!');
